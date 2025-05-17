@@ -1,6 +1,6 @@
 FROM centos:latest
 RUN yum install httpd zip wget unzip -y
-RUN wget -o /var/www/html/healet.zip https://www.free-css.com/assets/files/free-css-templates/download/page296/healet.zip
+RUN wget -0 /var/www/html/healet.zip https://www.free-css.com/assets/files/free-css-templates/download/page296/healet.zip
 WORKDIR /var/www/html
 RUN unzip healet.zip
 RUN cp -rf healet-html/* . &&\
